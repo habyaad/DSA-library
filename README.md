@@ -8,7 +8,7 @@ During this learning spree:
 ## Data Structures
 ### Linked list
 An alternative to arrays(better off at times)
-### Features:
+#### Features:
   - Insertion
     - Insert at the beginning
     - Insert at the end
@@ -27,6 +27,14 @@ An alternative to arrays(better off at times)
 Double linked list
 
 ## Algorithms
+### Linear search 
+Search for a number in an array, sorted or unsorted and returns the index, iterates all through to where the number exists
+#### Time complexity
+O(n)
+### Binary search 
+Search for a number in a sorted array, and returns the index, divides the array in halves until number is found where existing.
+#### Time complexity
+O(log n)
 
 ## Learning Source
   ### Code basics
