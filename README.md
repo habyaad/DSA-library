@@ -5,7 +5,7 @@ During this learning spree:
 - Python programming language would be used the major tool of implementation.
 - Each concept would be documented properly in here
 
-## Data Structures
+# Data Structures
 ### Linked list
 An alternative to arrays(better off at times)
 #### Features:
@@ -26,7 +26,8 @@ An alternative to arrays(better off at times)
 ### Doubly Linked list
 Double linked list
 
-## Algorithms
+# Algorithms
+## Search
 ### Linear search 
 Search for a number in an array, sorted or unsorted and returns the index, iterates all through to where the number exists
 #### Time complexity
