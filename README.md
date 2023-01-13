@@ -5,6 +5,29 @@ During this learning spree:
 - Python programming language would be used the major tool of implementation.
 - Each concept would be documented properly in here
 
+## Data Structures
+### Linked list
+An alternative to arrays(better off at times)
+### Features:
+  - Insertion
+    - Insert at the beginning
+    - Insert at the end
+    - Insert at index
+    - Insert multiple values
+  - Deletion
+    - Delete by value
+    - Delete by index
+  - Existence -> bool
+  - Get Existence index -> int
+  - Length
+  - Count of value
+  - Print linked list
+
+### Doubly Linked list
+Double linked list
+
+## Algorithms
+
 ## Learning Source
   ### Code basics
   - <a href="https://www.youtube.com/playlist?list=PLeo1K3hjS3uu_n_a__MI_KktGTLYopZ12"> Youtube </a>
