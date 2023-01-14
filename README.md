@@ -25,7 +25,20 @@ An alternative to arrays(better off at times)
 
 ### Doubly Linked list
 Double linked list
-
+#### Features:
+  - Insertion
+    - Insert at the beginning
+    - Insert at the end
+    - Insert at index
+    - Insert multiple values
+  - Deletion
+    - Delete by value
+    - Delete by index
+  - Existence -> bool
+  - Get Existence index -> int
+  - Length(optimised O(1))
+  - Count of value
+  - Print linked list forward and backward
 # Algorithms
 ## Search
 ### Linear search 
