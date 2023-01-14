@@ -2,8 +2,8 @@
 ### Introduction 
 I would be learning data structures and algorithm properly and extensively in 2023(over its span).<br>
 During this learning spree: 
-- Python programming language would be used the major tool of implementation.
-- Each concept would be documented properly in here
+- Python programming language would be used as the major tool of implementation.
+- Each concept would be documented properly in here.
 
 # Data Structures
 ### Linked list
