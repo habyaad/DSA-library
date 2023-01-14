@@ -51,12 +51,88 @@ class LinkedList:
                     node = Node(newData, itr, itr.nextNode)
                     itr.nextNode.prevNode = node
                     itr.nextNode = node
-                    self.length +=1
+                    self.length += 1
                     break
 
                 count += 1
                 itr = itr.nextNode
 
+    # deletion processes
+    def removeAt(self, index):
+        if index < 0 or index >= self.getLength():
+            raise Exception("Invalid index")
+        elif index == 0:
+            self.head = self.head.nextNode
+            self.head.prevNode = None
+            self.length -= 1
+
+        else:
+            itr = self.head
+            count = 0
+            while itr is not None:
+                if count == index-1:
+                    itr.nextNode = itr.nextNode.nextNode
+                    itr.nextNode.prevNode = itr
+                    self.length -= 1
+                    break
+                itr = itr.nextNode
+                count += 1
+
+    def remove(self, value):
+        if self.exists(value):
+            itr = self.head
+            last_item = self.getLastItem()
+            # if item is first
+            if itr.nodeData == value:
+                self.head = self.head.nextNode
+                self.head.prevNode = None
+                self.length -= 1
+            # if item is last
+            elif last_item.nodeData == value:
+                while itr is not None:
+
+                    if itr.nextNode.nextNode == None:
+                        itr.nextNode = None
+
+                        self.length -= 1
+                        break
+                    itr = itr.nextNode
+            else:
+                while itr is not None:
+
+                    if itr.nextNode.nodeData == value:
+                        itr.nextNode = itr.nextNode.nextNode
+                        itr.nextNode.prevNode = itr
+                        self.length -= 1
+                        break
+                    itr = itr.nextNode
+        else:
+            raise Exception(f"{value} does not exist in the doubly linked list")
+
+    # extras
+    def count(self, value) -> int:
+        itr = self.head
+        count = 0
+        while itr is not None:
+            if itr.nodeData == value:
+                count += 1
+            itr = itr.nextNode
+        return count
+
+    def exists(self, value) -> bool:
+        return True if self.count(value) > 0 else False
+
+    def index(self, value) -> int:
+        itr = self.head
+        count = 0
+        if self.exists(value):
+            while itr is not None:
+                if itr.nodeData == value:
+                    return count
+                itr = itr.nextNode
+                count += 1
+        else:
+            raise Exception(f"{value} does not exist in doubly linked list")
 
     def getLastItem(self) -> Node:
         itr = self.head
@@ -111,7 +187,8 @@ if __name__ == "__main__":
     dblLinkedList.insertAtBeginning(3)
     dblLinkedList.insertAtEnd(7)
     dblLinkedList.insertValues([1, 9])
-    dblLinkedList.insertAt(0, 10)
+
+    print(dblLinkedList.remove(9))
 
     print(dblLinkedList.getLength())
 
