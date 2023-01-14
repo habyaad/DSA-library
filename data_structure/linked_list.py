@@ -76,14 +76,8 @@ class LinkedList:
 
 
     def exists(self, value) ->  bool:
-        itr = self.head
         
-        while itr is not None:
-            if itr.nodeData == value:
-                return True
-            itr = itr.nextNode
-        
-        return False
+        return True if self.count(value)>0 else False
 
     def index(self, value) ->  int:
             itr = self.head
@@ -140,8 +134,8 @@ if __name__ == "__main__":
     
     linkedList.insertValues([1, 2, 3, 4])
     linkedList.insertAt(4, 100)
-
+    print(linkedList.count(2))
     print(linkedList.index(4))
-    print(linkedList.exists(80))
+    print(linkedList.exists(8000))
 
     linkedList.printLList()
