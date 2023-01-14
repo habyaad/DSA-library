@@ -63,6 +63,7 @@ class LinkedList:
                 count += 1
 
     def remove(self, value):
+        if self.exists(value):
             itr = self.head
             if itr.nodeData == value:
                 self.head = self.head.nextNode
@@ -73,7 +74,8 @@ class LinkedList:
                         itr.nextNode = itr.nextNode.nextNode
                         break
                     itr = itr.nextNode
-
+        else:
+            raise Exception(f"{value} does not exist in the linked list")
 
     def exists(self, value) ->  bool:
         
@@ -134,8 +136,7 @@ if __name__ == "__main__":
     
     linkedList.insertValues([1, 2, 3, 4])
     linkedList.insertAt(4, 100)
-    print(linkedList.count(2))
     print(linkedList.index(4))
-    print(linkedList.exists(8000))
+    print(linkedList.removeAt(8000))
 
     linkedList.printLList()
