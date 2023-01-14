@@ -188,7 +188,7 @@ if __name__ == "__main__":
     dblLinkedList.insertAtEnd(7)
     dblLinkedList.insertValues([1, 9])
 
-    print(dblLinkedList.remove(9))
+    dblLinkedList.remove(9)
 
     print(dblLinkedList.getLength())
 
