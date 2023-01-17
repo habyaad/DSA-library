@@ -39,6 +39,16 @@ Double linked list
   - Length(optimised O(1))
   - Count of value
   - Print linked list forward and backward
+
+### HashMap or HashTable
+For storing key value pair using a hash function
+#### Features:
+  - Insert key value pair
+  - Retrieve value of key
+  - Hash function
+  - Ensure uniqueness of key
+  - Resetting value of a key
+  - check if key exists in hash table
 # Algorithms
 ## Search
 ### Linear search 
