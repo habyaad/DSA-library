@@ -41,7 +41,7 @@ Double linked list
   - Print linked list forward and backward
 
 ### HashMap or HashTable
-For storing key value pair using a hash function
+For storing key-value pair using a hash function
 #### Features:
   - Insert key value pair
   - Retrieve value of key
@@ -49,6 +49,25 @@ For storing key value pair using a hash function
   - Ensure uniqueness of key
   - Resetting value of a key
   - check if key exists in hash table
+
+### Stack
+Implemented using deque(double ended queue) in python. stack operates on the Last in First Out (LIFO) mode
+#### Features:
+  - get length
+  - add to stack
+  - pop last item from stack
+  - return last item without popping(peek)
+  - check if empty
+  - print stack
+### Queue
+Implemented using deque(double ended queue) in python. Queue operates on the First in First Out (FIFO) mode
+#### Features:
+  - get length
+  - add to queue(enqueue)
+  - pop first item from stack
+  - return first item without popping(peek)
+  - check if empty
+  - print queue
 # Algorithms
 ## Search
 ### Linear search 
