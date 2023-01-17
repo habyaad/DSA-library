@@ -68,6 +68,9 @@ Implemented using deque(double ended queue) in python. Queue operates on the Fir
   - return first item without popping(peek)
   - check if empty
   - print queue
+
+### Tree
+**Next in-line**
 # Algorithms
 ## Search
 ### Linear search 
