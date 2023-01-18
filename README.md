@@ -70,7 +70,13 @@ Implemented using deque(double ended queue) in python. Queue operates on the Fir
   - print queue
 
 ### Tree
-**Next in-line**
+A non-linear data structure, see it as your normal tree with root, branches and leaves.
+#### Features:
+  - get level of a tree node
+  - print tree in designated format
+  - add children(leaves) to a treenode(branch)
+
+
 # Algorithms
 ## Search
 ### Linear search 
