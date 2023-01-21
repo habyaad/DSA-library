@@ -77,9 +77,18 @@ A non-linear data structure, see it as your normal tree with root, branches and 
   - add children(leaves) to a treenode(branch)
 
 ### Binary Tree
-A non-linear data structure, a kind of tree in which a treenode(branch) can have a maximum of two chidren(leaves)
+A non-linear data structure, a special kind of tree in which a treenode(branch) can have a maximum of two chidren(leaves) in which the lesser data always falls to the left of the treenode and the greater data falls to the right of the treenode.
+
 #### Features:
-*next in line*
+  - insertion operation
+  - deletion operation (ask me about this)
+  - sum of data in tree
+  - get minimum and maximum data in tree 
+  - check existence of a data in the tree
+  - Print tree
+    - in order traversal
+    - pre order traversal
+    - post order traversal
 # Algorithms
 ## Search
 ### Linear search 
